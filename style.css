@@ -1,0 +1,10 @@
+.start{
+    text-align: center;
+    float: center;
+    color: red;
+    background-color: chartreuse;
+    border-radius: 5vw;
+    padding: 5vw;
+    font-size:larger;
+    margin: 5% 40%;
+}
