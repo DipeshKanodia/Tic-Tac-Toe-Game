@@ -1,13 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <style>
+        .box {
+            text-align: center;
+
+            margin: auto;
+        }
+
+        .start {
+            text-align: center;
+            background-color: yellowgreen;
+            color: red;
+            border: red solid 10px;
+            border-radius: 4vw;
+            padding: 3vw;
+            font-size: xx-large;
+            margin-top: 5vw;
+        }
+
+        .player {
+            text-align: left;
+            font-size: x-large;
+            margin: 5vw;
+        }
+    </style>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
     <title>Tic-Tac-Toe Game</title>
 </head>
+
 <body>
-    <button onclick="window.location.href='game.html'" class="start" >Start Game</button>
+    <div class="box">
+        <h2><b>Enter the Player Names-</b></h2>
+        <label for="player1" class="player">Player 1:</label><br>
+        <input type="text" id="player1" name="player1" style="width: 20vw; height:2vw; "><br><br>
+        <label for="player2" class="player">Player 2:</label><br>
+        <input type="text" id="player2" name="player2" style="width: 20vw; height:2vw; "><br><br>
+        <button onclick="window.location.href='game.html'" class="start">Start Game</button>
+    </div>
+
+
+    <script src="index.js"></script>
 </body>
+
 </html>
