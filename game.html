@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=Hello World, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic-Tac-Toe</title>
     <link href="style.css" rel="stylesheet">
 
@@ -12,25 +12,25 @@
 <body>
     <h1>Tic-Tac-Toe Game</h1>
     <div class="board">
-    <table style=" ">
+    <table>
         <tr>
-          <th>fefcd</th>
-          <th></th>
-          <th></th>
+          <td class="place"  onclick="clickin(a00)" id="a00"></td>
+          <td class="place" onclick="clickin(a01)" id="a01"></td>
+          <td class="place" onclick="clickin(a02)" id="a02"></td>
         </tr>
         <tr>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td class="place" onclick="clickin(a10)" id="a10"></td>
+          <td class="place" onclick="clickin(a11)" id="a11"></td>
+          <td class="place" onclick="clickin(a12)" id="a12"></td>
         </tr>
         <tr>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td class="place" onclick="clickin(a20)" id="a20"></td>
+          <td class="place" onclick="clickin(a21)" id="a21"></td>
+          <td class="place" onclick="clickin(a22)" id="a22"></td>
         </tr>
       </table>
     </div>
-
+    <h2 class="winner"></h2>
 
     <script src="index.js"></script>
 </body>
