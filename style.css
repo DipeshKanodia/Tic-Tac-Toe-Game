@@ -21,3 +21,11 @@ h1{
     background-color: rgb(58, 53, 53);
     
 }
+#toss{
+    font-size: x-large;
+    text-align: center;
+
+}
+.tossing{
+    text-align: center;
+}

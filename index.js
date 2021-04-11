@@ -13,6 +13,24 @@ let arr = [
     [a20, a21, a22],
 ];
 
+
+let player1 = document.getElementById("player1");
+let player2 = document.getElementById("player2");
+let start = document.getElementById("start");
+
+// console.log(player1.value)
+// console.log(player2.value)
+// if ((player1.value != "") && (player2.value != "")) {
+//     start.disabled = false;    
+// }
+
+function Tosscoin(){
+    let ab = Math.floor(Math.random()*2);
+    if(ab==0)
+        document.getElementById("firstmove").innerText="It's heads!! And Player 1 goes first.";
+    else
+        document.getElementById("firstmove").innerText="It's tails!! And player 2 goes first.";
+}
 let n = 0;
 function clickin(element) {
     n++;
@@ -39,7 +57,14 @@ function checkresult() {
         drawpage();
 }
 function winningpage() {
-    alert("Player 1 won!!");
+    if(n%2==1 && ab==0)
+        alert("Player 1 won!!");
+    else if(n%2==1 && ab==1)
+        alert("Player 2 won!!");
+    else if(n%2==0 && ab==0)
+        alert("Player 2 won!!");
+    else
+        alert("Player 1 won!!");
     for (let i = 0; i < 3; i++) {
         for (let j = 0; j < 3; j++) {
             arr[i][j].innerText = "";
