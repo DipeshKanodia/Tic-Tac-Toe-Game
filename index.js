@@ -23,9 +23,9 @@ let start = document.getElementById("start");
 // if ((player1.value != "") && (player2.value != "")) {
 //     start.disabled = false;    
 // }
-
+let ab = Math.floor(Math.random()*2);
 function Tosscoin(){
-    let ab = Math.floor(Math.random()*2);
+    
     if(ab==0)
         document.getElementById("firstmove").innerText="It's heads!! And Player 1 goes first.";
     else
